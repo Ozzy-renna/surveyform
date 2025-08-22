@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Survey Form</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+<h1 id="title">Innovating The Future Survey Form</h1>
+<p id="description">Thank you for participating</p>
+<form id="survey-form">
+<label id="name-label"for="name">Name</label><br>
+<input type="text"id="name"name="name"placeholder="Enter your name"required><br>
+<label id="email-label"for="email">Email</label><br>
+<input type="email"id="email"name="email"placeholder="Enter your email"required><br>
+<label id="number-label"for="number">Age</label><br>
+<input type="number"id="number"name="number"placeholder="Enter your Age"min="10"max="100"required><br>
+<label id="dropdown"for="name">What best describes you</label><br>
+<select id="dropdown"name= "role">
+<option id="Beginner">Beginner</option>
+<option id="Professional">Professional</option>
+</select>
+<p>How satisfied are you with our services</p>
+<label>
+<input type="radio"name="satisfaction"value="very satisfied">Very satisfied
+</label><br>
+<label>
+<input type="radio"name="satisfaction"value="need for improvement">There is need for improvement
+</label>
+<p>What new updates would you like</p>
+<input type="checkbox"name="voice-rec"value="voice-rec">Voice recognition</input><br>
+<input type="checkbox"name="facial-rec"value="facial-rec">Facial recognition</input><br>
+<input type="checkbox"name="quality"value="quality">Improved quality</input><br>
+<label for="comments">Additional comments</label><br>
+<textarea id="comments"name="comments"placeholder="Enter your comments here"></textarea>
+<button id="submit"type="submit">Submit</button>
+</form>
+</body>
+<script src="script.js"></script>
+</html>
